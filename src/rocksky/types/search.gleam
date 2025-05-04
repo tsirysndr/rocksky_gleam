@@ -1,0 +1,130 @@
+import gleam/option.{type Option}
+
+pub type Highlight {
+  Highlight(
+    name: Option(List(String)),
+    title: Option(List(String)),
+    copyright_message: Option(List(String)),
+  )
+}
+
+pub type Record {
+  Artist(
+    xata_id: String,
+    name: String,
+    picture: Option(String),
+    sha256: String,
+    uri: String,
+    xata_createdat: String,
+    xata_highlight: Highlight,
+    xata_score: Int,
+    xata_table: String,
+    xata_updatedat: String,
+    xata_version: Int,
+    apple_music_link: Option(String),
+    biography: Option(String),
+    born: Option(String),
+    born_in: Option(String),
+    died: Option(String),
+    spotify_link: Option(String),
+    tidal_link: Option(String),
+    youtube_link: Option(String),
+  )
+  Track(
+    album: String,
+    album_art: Option(String),
+    album_artist: String,
+    album_uri: Option(String),
+    artist: String,
+    artist_uri: Option(String),
+    disc_number: Int,
+    duration: Int,
+    label: Option(String),
+    sha256: String,
+    spotify_link: Option(String),
+    title: String,
+    track_number: Int,
+    uri: String,
+    xata_createdat: String,
+    xata_highlight: Highlight,
+    xata_id: String,
+    xata_score: Int,
+    xata_table: String,
+    xata_updatedat: String,
+    xata_version: Int,
+    apple_music_link: Option(String),
+    composer: Option(String),
+    copyright_message: Option(String),
+    genre: Option(String),
+    lyrics: Option(String),
+    mb_id: Option(String),
+    tidal_link: Option(String),
+    youtube_link: Option(String),
+  )
+  Album(
+    album_art: Option(String),
+    artist: String,
+    artist_uri: Option(String),
+    release_date: Option(String),
+    sha256: String,
+    title: String,
+    uri: String,
+    xata_createdat: String,
+    xata_highlight: Highlight,
+    xata_id: String,
+    xata_score: Int,
+    xata_table: String,
+    xata_updatedat: String,
+    xata_version: Int,
+    year: Option(Int),
+    apple_music_link: Option(String),
+    spotify_link: Option(String),
+    tidal_link: Option(String),
+    youtube_link: Option(String),
+  )
+  Record(
+    name: Option(String),
+    picture: Option(String),
+    sha256: String,
+    uri: String,
+    xata_createdat: String,
+    xata_highlight: Highlight,
+    xata_id: String,
+    xata_score: Float,
+    xata_table: String,
+    xata_updatedat: String,
+    xata_version: Int,
+    apple_music_link: Option(String),
+    biography: Option(String),
+    born: Option(String),
+    born_in: Option(String),
+    died: Option(String),
+    spotify_link: Option(String),
+    tidal_link: Option(String),
+    youtube_link: Option(String),
+    album: Option(String),
+    album_art: Option(String),
+    album_artist: Option(String),
+    artist: Option(String),
+    disc_number: Option(Int),
+    duration: Option(Int),
+    label: Option(String),
+    title: Option(String),
+    track_number: Option(Int),
+    album_uri: Option(String),
+    artist_uri: Option(String),
+    composer: Option(String),
+    copyright_message: Option(String),
+    genre: Option(String),
+    lyrics: Option(String),
+    mb_id: Option(String),
+  )
+}
+
+pub type Records {
+  Records(table: String, record: Record)
+}
+
+pub type SearchResult {
+  SearchResult(total_count: Int, records: List(Records))
+}

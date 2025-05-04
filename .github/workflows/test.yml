@@ -1,0 +1,30 @@
+name: test
+
+on:
+  push:
+    branches:
+      - master
+      - main
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Replay
+        run: |
+          wget https://github.com/tsirysndr/replay/releases/download/v0.1.0/replay_v0.1.0_x86_64-unknown-linux-gnu.tar.gz
+          tar xzf replay_v0.1.0_x86_64-unknown-linux-gnu.tar.gz
+          ./replay --version
+          ./replay & # run in background
+          sleep 2    # wait for replay to start
+      - uses: erlef/setup-beam@v1
+        with:
+          otp-version: "27.1.2"
+          gleam-version: "1.9.1"
+          rebar3-version: "3"
+          # elixir-version: "1"
+      - run: gleam deps download
+      - run: gleam test
+      - run: gleam format --check src test
