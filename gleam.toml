@@ -4,7 +4,7 @@ version = "1.0.0"
 # Fill out these fields if you intend to generate HTML documentation or publish
 # your project to the Hex package manager.
 #
-description = ""
+description = "Gleam library for the Rocksky API"
 licences = ["Apache-2.0"]
 repository = { type = "github", user = "tsirysndr", repo = "rocksky_gleam" }
 links = [{ title = "Website", href = "https://docs.rocksky.app" }]
