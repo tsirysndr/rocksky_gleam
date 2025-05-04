@@ -1,11 +1,13 @@
-import gleam/option.{None, Some}
+import gleam/option.{None}
 import rocksky/client/base
-import rocksky/resources/scrobbles
+import rocksky/resources/tracks.{get_track}
 
 pub fn main() {
   let client = base.new(None, None)
 
-  scrobbles.new(client)
-  |> scrobbles.get_scrobbles(Some("tsiry-sandratraina.com"))
+  get_track(
+    tracks.new(client),
+    "did:plc:7vdlgi2bflelz7mmuxoqjfcr/app.rocksky.song/3lhtyr34rnk2h",
+  )
   |> echo
 }

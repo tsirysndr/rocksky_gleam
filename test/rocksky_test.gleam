@@ -162,3 +162,19 @@ pub fn get_artist_test() {
   )
   |> should.be_ok
 }
+
+pub fn get_track_test() {
+  let client = base.from_url(base_url, None, None)
+
+  tracks.new(client)
+  |> tracks.get_track(
+    "did:plc:7vdlgi2bflelz7mmuxoqjfcr/app.rocksky.song/3lhtyr34rnk2h",
+  )
+  |> should.be_ok
+
+  tracks.new(client)
+  |> tracks.get_track(
+    "at://did:plc:7vdlgi2bflelz7mmuxoqjfcr/app.rocksky.song/3lhtyr34rnk2h",
+  )
+  |> should.be_ok
+}

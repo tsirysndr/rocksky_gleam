@@ -1934,5 +1934,78 @@
       ],
       "body": "{\"name\":\"Kiesza\",\"picture\":\"https://i.scdn.co/image/ab6761610000e5ebf8449085dadabebe939997a1\",\"sha256\":\"85291a57793af605e54f78cd6e1d37e28896711fb23001ec9e7caf8bf5254821\",\"uri\":\"at://did:plc:7vdlgi2bflelz7mmuxoqjfcr/app.rocksky.artist/3liorhapngk23\",\"xata_createdat\":\"2025-02-21T12:06:22.709Z\",\"xata_updatedat\":\"2025-04-22T18:16:09.245Z\",\"xata_version\":393,\"apple_music_link\":null,\"biography\":null,\"born\":null,\"born_in\":null,\"died\":null,\"spotify_link\":null,\"tidal_link\":null,\"youtube_link\":null,\"id\":\"rec_cus6ofnu3busimrou51g\",\"listeners\":1,\"scrobbles\":163,\"tags\":[]}"
     }
+  },
+  {
+    "request": {
+      "timestamp": 1746392351,
+      "method": "GET",
+      "path": "/users/did:plc:7vdlgi2bflelz7mmuxoqjfcr/app.rocksky.song/3lhtyr34rnk2h",
+      "query_params": null,
+      "headers": [
+        [
+          "content-length",
+          "0"
+        ],
+        [
+          "user-agent",
+          "gleam_httpc/4.1.0"
+        ],
+        [
+          "te",
+          ""
+        ],
+        [
+          "host",
+          "localhost:6677"
+        ],
+        [
+          "authorization",
+          "Bearer"
+        ],
+        [
+          "connection",
+          "close"
+        ]
+      ],
+      "body": ""
+    },
+    "response": {
+      "status": 200,
+      "headers": [
+        [
+          "access-control-allow-origin",
+          "*"
+        ],
+        [
+          "alt-svc",
+          "h3=\":443\"; ma=2592000"
+        ],
+        [
+          "content-length",
+          "2332"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "date",
+          "Sun, 04 May 2025 20:59:13 GMT"
+        ],
+        [
+          "via",
+          "1.1 Caddy"
+        ],
+        [
+          "x-ratelimit-limit",
+          "1000"
+        ],
+        [
+          "x-ratelimit-remaining",
+          "992"
+        ]
+      ],
+      "body": "{\"album\":\"Bad Dream\",\"album_art\":\"https://cdn.rocksky.app/covers/cc969b71214e8e8fb65fbfd5892dabcb.jpg\",\"album_artist\":\"Cannons\",\"album_uri\":\"at://did:plc:7vdlgi2bflelz7mmuxoqjfcr/app.rocksky.album/3lhtyr5qjdk2h\",\"artist\":\"Cannons\",\"artist_uri\":\"at://did:plc:7vdlgi2bflelz7mmuxoqjfcr/app.rocksky.artist/3lhluehwa2c2k\",\"composer\":\"Michelle Lewis, Ryan Clapham, Paul Daniel Davis\",\"copyright_message\":\"(P) 2021 Cannons, under exclusive license to Columbia Records, a Division of Sony Music Entertainment\",\"disc_number\":1,\"duration\":202616,\"lyrics\":\"[00:00.28] I bought a ticket to your show\\n[00:04.36] Did you see me? Did you know?\\n[00:08.65] I was standing in the back row (back row, back row)\\n[00:12.83] With the lights down low\\n[00:16.84] I couldn't think of the right words\\n[00:21.00] Now it's just too late\\n[00:25.28] Now you're somebody's baby\\n[00:29.04] So I'll be on my way\\n[00:33.60] I been living in a bad dream\\n[00:38.78] \\n[00:42.03] I been living in a bad, bad dream\\n[00:50.08] I wish that somebody would wake me\\n[00:54.11] Don't like this feeling, won't you shake me?\\n[00:58.56] 'Cause anymore might break me (break me, break me)\\n[01:02.95] And you'll never know\\n[01:07.06] I couldn't think of the right words\\n[01:11.02] Now it's just too late\\n[01:15.45] Now you're somebody's baby\\n[01:19.13] So I'll be on my way\\n[01:23.62] I been living in a bad dream\\n[01:27.89] \\n[01:32.14] I been living in a bad, bad dream\\n[01:40.20] Sleepwalking through a sad scene\\n[01:45.78] \\n[01:48.60] I been living in a bad, bad dream\\n[01:55.62] \\n[02:30.51] I been living in a bad dream\\n[02:35.75] \\n[02:38.73] I been living in a bad, bad dream\\n[02:44.63] \\n[02:46.93] Sleepwalking through a sad scene\\n[02:51.74] \\n[02:55.49] I been living in a bad, bad dream\\n[03:01.78] \\n[03:03.88] I been living in a bad dream\\n[03:06.73] \",\"sha256\":\"721b08ec2ab67af85ef024ff5333b4fae9d7f2f258b2c399d32c2683243486b4\",\"title\":\"Bad Dream\",\"track_number\":1,\"uri\":\"at://did:plc:7vdlgi2bflelz7mmuxoqjfcr/app.rocksky.song/3lhtyr34rnk2h\",\"xata_createdat\":\"2025-02-10T20:11:36.377Z\",\"xata_updatedat\":\"2025-04-21T16:23:08.817Z\",\"xata_version\":73,\"apple_music_link\":null,\"genre\":null,\"label\":null,\"mb_id\":null,\"spotify_link\":null,\"tidal_link\":null,\"youtube_link\":null,\"id\":\"rec_cul5qu365asp6a7ql7gg\",\"tags\":[],\"listeners\":1,\"scrobbles\":35}"
+    }
   }
 ]
