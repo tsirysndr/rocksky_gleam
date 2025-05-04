@@ -1,5 +1,6 @@
 # rocksky_gleam
 
+[![test](https://github.com/tsirysndr/rocksky_gleam/actions/workflows/test.yml/badge.svg)](https://github.com/tsirysndr/rocksky_gleam/actions/workflows/test.yml)
 [![Package Version](https://img.shields.io/hexpm/v/rocksky)](https://hex.pm/packages/rocksky)
 [![Hex Docs](https://img.shields.io/badge/hex-docs-ffaff3)](https://hexdocs.pm/rocksky/)
 
