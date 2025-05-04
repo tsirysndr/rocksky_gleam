@@ -4,6 +4,8 @@
 [![Package Version](https://img.shields.io/hexpm/v/rocksky)](https://hex.pm/packages/rocksky)
 [![Hex Docs](https://img.shields.io/badge/hex-docs-ffaff3)](https://hexdocs.pm/rocksky/)
 
+The official [Rocksky](https://rocksky.app) Gleam client library.
+
 ```sh
 gleam add rocksky@1
 ```
