@@ -10,12 +10,12 @@ The official [Rocksky](https://rocksky.app) Gleam client library.
 gleam add rocksky@1
 ```
 ```gleam
-import gleam/option.{None, Some}
+import gleam/option.{Some}
 import rocksky/client/base
 import rocksky/resources/scrobbles
 
 pub fn main() {
-  let client = base.new(None, None)
+  let client = base.new()
 
   scrobbles.new(client)
   |> scrobbles.get_scrobbles(Some("tsiry-sandratraina.com"))
