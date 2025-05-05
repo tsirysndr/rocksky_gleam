@@ -1,10 +1,12 @@
 import gleam/dynamic/decode
+import gleam/int
 import gleam/json
 import gleam/option.{type Option, None, Some}
 import gleam/string
 import rocksky/client/base as base_client
 import rocksky/errors
 import rocksky/resources/base
+import rocksky/types/pagination.{type Pagination}
 import rocksky/types/scrobble.{type Scrobble}
 
 pub type ScrobbleResource =
@@ -17,6 +19,7 @@ pub fn new(client: base_client.Client) -> ScrobbleResource {
 pub fn get_scrobbles(
   resource: ScrobbleResource,
   did: Option(String),
+  pagination: Pagination,
 ) -> Result(List(Scrobble), errors.ApiError) {
   let path = case did {
     Some(did) -> {
@@ -24,6 +27,19 @@ pub fn get_scrobbles(
     }
     None -> {
       "/public/scrobbles"
+    }
+  }
+
+  let path = case pagination {
+    pagination.Pagination(offset, size) -> {
+      path
+      <> "?size="
+      <> int.to_string(size)
+      <> "&offset="
+      <> int.to_string(offset)
+    }
+    _ -> {
+      path
     }
   }
 

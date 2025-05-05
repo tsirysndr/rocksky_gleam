@@ -1,10 +1,12 @@
 import gleam/dynamic/decode
+import gleam/int
 import gleam/json
 import gleam/option.{type Option, None, Some}
 import gleam/string
 import rocksky/client/base as base_client
 import rocksky/errors
 import rocksky/resources/base.{type Resource}
+import rocksky/types/pagination.{type Pagination}
 import rocksky/types/track.{type Track}
 
 pub type TrackResource =
@@ -17,6 +19,7 @@ pub fn new(client: base_client.Client) -> TrackResource {
 pub fn get_tracks(
   resource: TrackResource,
   did: Option(String),
+  pagination: Pagination,
 ) -> Result(List(Track), errors.ApiError) {
   let path = case did {
     Some(did) -> {
@@ -24,6 +27,19 @@ pub fn get_tracks(
     }
     None -> {
       "/tracks"
+    }
+  }
+
+  let path = case pagination {
+    pagination.Pagination(offset, size) -> {
+      path
+      <> "?size="
+      <> int.to_string(size)
+      <> "&offset="
+      <> int.to_string(offset)
+    }
+    _ -> {
+      path
     }
   }
 

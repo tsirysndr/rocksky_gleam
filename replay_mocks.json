@@ -2007,5 +2007,297 @@
       ],
       "body": "{\"album\":\"Bad Dream\",\"album_art\":\"https://cdn.rocksky.app/covers/cc969b71214e8e8fb65fbfd5892dabcb.jpg\",\"album_artist\":\"Cannons\",\"album_uri\":\"at://did:plc:7vdlgi2bflelz7mmuxoqjfcr/app.rocksky.album/3lhtyr5qjdk2h\",\"artist\":\"Cannons\",\"artist_uri\":\"at://did:plc:7vdlgi2bflelz7mmuxoqjfcr/app.rocksky.artist/3lhluehwa2c2k\",\"composer\":\"Michelle Lewis, Ryan Clapham, Paul Daniel Davis\",\"copyright_message\":\"(P) 2021 Cannons, under exclusive license to Columbia Records, a Division of Sony Music Entertainment\",\"disc_number\":1,\"duration\":202616,\"lyrics\":\"[00:00.28] I bought a ticket to your show\\n[00:04.36] Did you see me? Did you know?\\n[00:08.65] I was standing in the back row (back row, back row)\\n[00:12.83] With the lights down low\\n[00:16.84] I couldn't think of the right words\\n[00:21.00] Now it's just too late\\n[00:25.28] Now you're somebody's baby\\n[00:29.04] So I'll be on my way\\n[00:33.60] I been living in a bad dream\\n[00:38.78] \\n[00:42.03] I been living in a bad, bad dream\\n[00:50.08] I wish that somebody would wake me\\n[00:54.11] Don't like this feeling, won't you shake me?\\n[00:58.56] 'Cause anymore might break me (break me, break me)\\n[01:02.95] And you'll never know\\n[01:07.06] I couldn't think of the right words\\n[01:11.02] Now it's just too late\\n[01:15.45] Now you're somebody's baby\\n[01:19.13] So I'll be on my way\\n[01:23.62] I been living in a bad dream\\n[01:27.89] \\n[01:32.14] I been living in a bad, bad dream\\n[01:40.20] Sleepwalking through a sad scene\\n[01:45.78] \\n[01:48.60] I been living in a bad, bad dream\\n[01:55.62] \\n[02:30.51] I been living in a bad dream\\n[02:35.75] \\n[02:38.73] I been living in a bad, bad dream\\n[02:44.63] \\n[02:46.93] Sleepwalking through a sad scene\\n[02:51.74] \\n[02:55.49] I been living in a bad, bad dream\\n[03:01.78] \\n[03:03.88] I been living in a bad dream\\n[03:06.73] \",\"sha256\":\"721b08ec2ab67af85ef024ff5333b4fae9d7f2f258b2c399d32c2683243486b4\",\"title\":\"Bad Dream\",\"track_number\":1,\"uri\":\"at://did:plc:7vdlgi2bflelz7mmuxoqjfcr/app.rocksky.song/3lhtyr34rnk2h\",\"xata_createdat\":\"2025-02-10T20:11:36.377Z\",\"xata_updatedat\":\"2025-04-21T16:23:08.817Z\",\"xata_version\":73,\"apple_music_link\":null,\"genre\":null,\"label\":null,\"mb_id\":null,\"spotify_link\":null,\"tidal_link\":null,\"youtube_link\":null,\"id\":\"rec_cul5qu365asp6a7ql7gg\",\"tags\":[],\"listeners\":1,\"scrobbles\":35}"
     }
+  },
+  {
+    "request": {
+      "timestamp": 1746419863,
+      "method": "GET",
+      "path": "/users/did:plc:7vdlgi2bflelz7mmuxoqjfcr/albums",
+      "query_params": "size=2&offset=0",
+      "headers": [
+        [
+          "content-length",
+          "0"
+        ],
+        [
+          "user-agent",
+          "gleam_httpc/4.1.0"
+        ],
+        [
+          "te",
+          ""
+        ],
+        [
+          "host",
+          "localhost:6677"
+        ],
+        [
+          "authorization",
+          "Bearer"
+        ],
+        [
+          "connection",
+          "close"
+        ]
+      ],
+      "body": ""
+    },
+    "response": {
+      "status": 200,
+      "headers": [
+        [
+          "access-control-allow-origin",
+          "*"
+        ],
+        [
+          "alt-svc",
+          "h3=\":443\"; ma=2592000"
+        ],
+        [
+          "content-length",
+          "988"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "date",
+          "Mon, 05 May 2025 04:37:44 GMT"
+        ],
+        [
+          "via",
+          "1.1 Caddy"
+        ],
+        [
+          "x-ratelimit-limit",
+          "1000"
+        ],
+        [
+          "x-ratelimit-remaining",
+          "993"
+        ]
+      ],
+      "body": "[{\"id\":\"rec_cus6ofqojig7sjj88jbg\",\"title\":\"Sound Of A Woman\",\"artist\":\"Kiesza\",\"release_date\":\"2014-10-21\",\"album_art\":\"https://cdn.rocksky.app/covers/e02bb04c7c33799e8bcf7fb4d3e07335.jpg\",\"year\":2014,\"sha256\":\"cb3db2a2bd3e5c31ce0dc9dc391a8af1ac0cba5c4e42793ab5f5a5807959064c\",\"uri\":\"at://did:plc:7vdlgi2bflelz7mmuxoqjfcr/app.rocksky.album/3liorhbl4dk23\",\"artist_uri\":\"at://did:plc:7vdlgi2bflelz7mmuxoqjfcr/app.rocksky.artist/3liorhapngk23\",\"play_count\":144,\"unique_listeners\":1,\"tags\":[]},{\"id\":\"rec_cuh97cr9sf5f7iluqaa0\",\"title\":\"Random Access Memories\",\"artist\":\"Daft Punk\",\"release_date\":\"2013-05-20\",\"album_art\":\"https://cdn.rocksky.app/covers/179c025878bca2fcff445179e21825bc.jpg\",\"year\":2013,\"sha256\":\"6b4c15fb9e701eacc7080c5e997a73d9c44caa6ce62d386731f946d6bb39fecd\",\"uri\":\"at://did:plc:7vdlgi2bflelz7mmuxoqjfcr/app.rocksky.album/3lhlkzzimck2k\",\"artist_uri\":\"at://did:plc:7vdlgi2bflelz7mmuxoqjfcr/app.rocksky.artist/3lhlkzyo5ms2k\",\"play_count\":121,\"unique_listeners\":1,\"tags\":[]}]"
+    }
+  },
+  {
+    "request": {
+      "timestamp": 1746419867,
+      "method": "GET",
+      "path": "/users/did:plc:7vdlgi2bflelz7mmuxoqjfcr/artists",
+      "query_params": "size=2&offset=0",
+      "headers": [
+        [
+          "content-length",
+          "0"
+        ],
+        [
+          "user-agent",
+          "gleam_httpc/4.1.0"
+        ],
+        [
+          "te",
+          ""
+        ],
+        [
+          "host",
+          "localhost:6677"
+        ],
+        [
+          "authorization",
+          "Bearer"
+        ],
+        [
+          "connection",
+          "close"
+        ]
+      ],
+      "body": ""
+    },
+    "response": {
+      "status": 200,
+      "headers": [
+        [
+          "access-control-allow-origin",
+          "*"
+        ],
+        [
+          "alt-svc",
+          "h3=\":443\"; ma=2592000"
+        ],
+        [
+          "content-length",
+          "666"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "date",
+          "Mon, 05 May 2025 04:37:48 GMT"
+        ],
+        [
+          "via",
+          "1.1 Caddy"
+        ],
+        [
+          "x-ratelimit-limit",
+          "1000"
+        ],
+        [
+          "x-ratelimit-remaining",
+          "988"
+        ]
+      ],
+      "body": "[{\"id\":\"rec_cuupvdiojig7sjj8gij0\",\"name\":\"A$AP Rocky\",\"picture\":\"https://i.scdn.co/image/ab6761610000e5eb5c58c41a506a0d6b32cc6cad\",\"sha256\":\"31a3078d0858ab57cbb2a1cd2407bc93a74bacd1b7c0f1d6173b61ff72d5aecc\",\"uri\":\"at://did:plc:7vdlgi2bflelz7mmuxoqjfcr/app.rocksky.artist/3liyor4m2xc2l\",\"play_count\":231,\"unique_listeners\":1,\"tags\":[]},{\"id\":\"rec_cuu3renu3busimrp2t5g\",\"name\":\"J. Cole\",\"picture\":\"https://i.scdn.co/image/ab6761610000e5eb4b053c29fd4b317ff825f0dc\",\"sha256\":\"2907b120a5a9ca833d24b368054f2184f57de45390b42426e277b5b553fba856\",\"uri\":\"at://did:plc:7vdlgi2bflelz7mmuxoqjfcr/app.rocksky.artist/3liw2eggxws2l\",\"play_count\":194,\"unique_listeners\":1,\"tags\":[]}]"
+    }
+  },
+  {
+    "request": {
+      "timestamp": 1746419897,
+      "method": "GET",
+      "path": "/users/did:plc:7vdlgi2bflelz7mmuxoqjfcr/tracks",
+      "query_params": "size=2&offset=0",
+      "headers": [
+        [
+          "content-length",
+          "0"
+        ],
+        [
+          "user-agent",
+          "gleam_httpc/4.1.0"
+        ],
+        [
+          "te",
+          ""
+        ],
+        [
+          "host",
+          "localhost:6677"
+        ],
+        [
+          "authorization",
+          "Bearer"
+        ],
+        [
+          "connection",
+          "close"
+        ]
+      ],
+      "body": ""
+    },
+    "response": {
+      "status": 200,
+      "headers": [
+        [
+          "access-control-allow-origin",
+          "*"
+        ],
+        [
+          "alt-svc",
+          "h3=\":443\"; ma=2592000"
+        ],
+        [
+          "content-length",
+          "1164"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "date",
+          "Mon, 05 May 2025 04:38:18 GMT"
+        ],
+        [
+          "via",
+          "1.1 Caddy"
+        ],
+        [
+          "x-ratelimit-limit",
+          "1000"
+        ],
+        [
+          "x-ratelimit-remaining",
+          "989"
+        ]
+      ],
+      "body": "[{\"id\":\"rec_cul5qu365asp6a7ql7gg\",\"title\":\"Bad Dream\",\"artist\":\"Cannons\",\"album_artist\":\"Cannons\",\"album_art\":\"https://cdn.rocksky.app/covers/cc969b71214e8e8fb65fbfd5892dabcb.jpg\",\"album\":\"Bad Dream\",\"track_number\":1,\"duration\":202616,\"sha256\":\"721b08ec2ab67af85ef024ff5333b4fae9d7f2f258b2c399d32c2683243486b4\",\"disc_number\":1,\"uri\":\"at://did:plc:7vdlgi2bflelz7mmuxoqjfcr/app.rocksky.song/3lhtyr34rnk2h\",\"created_at\":\"2025-02-10T20:11:36.377019\",\"play_count\":35,\"unique_listeners\":1,\"tags\":[]},{\"id\":\"rec_cus6rg2ojig7sjj88jhg\",\"title\":\"No Enemiesz\",\"artist\":\"Kiesza\",\"album_artist\":\"Kiesza\",\"album_art\":\"https://cdn.rocksky.app/covers/e02bb04c7c33799e8bcf7fb4d3e07335.jpg\",\"album\":\"Sound Of A Woman\",\"track_number\":2,\"duration\":197473,\"sha256\":\"1ff8dbcfb3686d2703cc4f314095c5cbf2ea842642c5c30eafe30694b259c62f\",\"disc_number\":1,\"uri\":\"at://did:plc:7vdlgi2bflelz7mmuxoqjfcr/app.rocksky.song/3lioroblf4223\",\"artist_uri\":\"at://did:plc:7vdlgi2bflelz7mmuxoqjfcr/app.rocksky.artist/3liorhapngk23\",\"album_uri\":\"at://did:plc:7vdlgi2bflelz7mmuxoqjfcr/app.rocksky.album/3liorhbl4dk23\",\"created_at\":\"2025-02-21T12:12:48.828567\",\"play_count\":26,\"unique_listeners\":1,\"tags\":[]}]"
+    }
+  },
+  {
+    "request": {
+      "timestamp": 1746419902,
+      "method": "GET",
+      "path": "/users/did:plc:7vdlgi2bflelz7mmuxoqjfcr/scrobbles",
+      "query_params": "size=2&offset=0",
+      "headers": [
+        [
+          "content-length",
+          "0"
+        ],
+        [
+          "user-agent",
+          "gleam_httpc/4.1.0"
+        ],
+        [
+          "te",
+          ""
+        ],
+        [
+          "host",
+          "localhost:6677"
+        ],
+        [
+          "authorization",
+          "Bearer"
+        ],
+        [
+          "connection",
+          "close"
+        ]
+      ],
+      "body": ""
+    },
+    "response": {
+      "status": 200,
+      "headers": [
+        [
+          "access-control-allow-origin",
+          "*"
+        ],
+        [
+          "alt-svc",
+          "h3=\":443\"; ma=2592000"
+        ],
+        [
+          "content-length",
+          "1608"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "date",
+          "Mon, 05 May 2025 04:38:23 GMT"
+        ],
+        [
+          "via",
+          "1.1 Caddy"
+        ],
+        [
+          "x-ratelimit-limit",
+          "1000"
+        ],
+        [
+          "x-ratelimit-remaining",
+          "984"
+        ]
+      ],
+      "body": "[{\"id\":\"rec_d0bpm65qrj653nq34upg\",\"track_id\":\"rec_d0bpm35qrj64m3i34ul0\",\"title\":\"Dance With Me\",\"artist\":\"Kevin de Vries\",\"album_artist\":\"Kevin de Vries\",\"album_art\":\"https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:7vdlgi2bflelz7mmuxoqjfcr/bafkreidw6eikb2o6ndzbqhfy2clskqer4bdplyyuxwzscbmlwb6mx5fy2a@jpeg\",\"album\":\"Dance With Me EP\",\"handle\":\"tsiry-sandratraina.com\",\"did\":\"did:plc:7vdlgi2bflelz7mmuxoqjfcr\",\"avatar\":null,\"uri\":\"at://did:plc:7vdlgi2bflelz7mmuxoqjfcr/app.rocksky.scrobble/3loect3d26s2k\",\"track_uri\":\"at://did:plc:7vdlgi2bflelz7mmuxoqjfcr/app.rocksky.song/3loecssigak2k\",\"artist_uri\":\"at://did:plc:7vdlgi2bflelz7mmuxoqjfcr/app.rocksky.artist/3lnk7wi62bs2n\",\"album_uri\":\"at://did:plc:7vdlgi2bflelz7mmuxoqjfcr/app.rocksky.album/3loecsxi6kc2k\",\"created_at\":\"2025-05-04T16:51:33.432\"},{\"id\":\"rec_d0bpl2lqrj64m3i34u7g\",\"track_id\":\"rec_d0bpl05qrj64km234u30\",\"title\":\"How It Feels\",\"artist\":\"Barry Can't Swim\",\"album_artist\":\"Barry Can't Swim\",\"album_art\":\"https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:7vdlgi2bflelz7mmuxoqjfcr/bafkreigqh3kht6tcswwkvhgnbhcp73soai6rk74hqry2bcsyabryn6wrvu@jpeg\",\"album\":\"When Will We Land?\",\"handle\":\"tsiry-sandratraina.com\",\"did\":\"did:plc:7vdlgi2bflelz7mmuxoqjfcr\",\"avatar\":null,\"uri\":\"at://did:plc:7vdlgi2bflelz7mmuxoqjfcr/app.rocksky.scrobble/3loecowj63s2k\",\"track_uri\":\"at://did:plc:7vdlgi2bflelz7mmuxoqjfcr/app.rocksky.song/3loecoml5dk2k\",\"artist_uri\":\"at://did:plc:7vdlgi2bflelz7mmuxoqjfcr/app.rocksky.artist/3lmpiji5ukk2f\",\"album_uri\":\"at://did:plc:7vdlgi2bflelz7mmuxoqjfcr/app.rocksky.album/3loecorw5yk2k\",\"created_at\":\"2025-05-04T16:49:14.035\"}]"
+    }
   }
 ]

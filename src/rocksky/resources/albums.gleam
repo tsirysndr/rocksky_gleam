@@ -1,4 +1,5 @@
 import gleam/dynamic/decode
+import gleam/int
 import gleam/json
 import gleam/option.{type Option, None, Some}
 import gleam/string
@@ -6,6 +7,7 @@ import rocksky/client/base as base_client
 import rocksky/errors
 import rocksky/resources/base.{type Resource}
 import rocksky/types/album.{type Album}
+import rocksky/types/pagination.{type Pagination}
 import rocksky/types/track
 
 pub type AlbumResource =
@@ -18,6 +20,7 @@ pub fn new(client: base_client.Client) -> AlbumResource {
 pub fn get_albums(
   resource: AlbumResource,
   did: Option(String),
+  pagination: Pagination,
 ) -> Result(List(Album), errors.ApiError) {
   let path = case did {
     Some(did) -> {
@@ -26,6 +29,19 @@ pub fn get_albums(
     }
     _ -> {
       "/albums"
+    }
+  }
+
+  let path = case pagination {
+    pagination.Pagination(offset, size) -> {
+      path
+      <> "?size="
+      <> int.to_string(size)
+      <> "&offset="
+      <> int.to_string(offset)
+    }
+    _ -> {
+      path
     }
   }
 

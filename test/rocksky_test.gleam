@@ -1,3 +1,4 @@
+import gleam/list
 import gleam/option.{None, Some}
 import gleam/result
 import gleeunit
@@ -9,6 +10,7 @@ import rocksky/resources/base as resource
 import rocksky/resources/scrobbles
 import rocksky/resources/tracks
 import rocksky/resources/users
+import rocksky/types/pagination
 import rocksky/types/user.{User}
 
 pub const base_url = "http://localhost:6677"
@@ -47,80 +49,148 @@ pub fn get_albums_test() {
   let client = base.from_url(base_url, None, None)
 
   albums.new(client)
-  |> albums.get_albums(Some("tsiry-sandratraina.com"))
+  |> albums.get_albums(Some("tsiry-sandratraina.com"), pagination.Default)
   |> should.be_ok()
 
   albums.new(client)
-  |> albums.get_albums(Some("did:plc:7vdlgi2bflelz7mmuxoqjfcr"))
+  |> albums.get_albums(
+    Some("did:plc:7vdlgi2bflelz7mmuxoqjfcr"),
+    pagination.Default,
+  )
   |> should.be_ok()
 
   albums.new(client)
-  |> albums.get_albums(Some("did:plc:7vdlgi2bflelz7mmuxoqjfcr_"))
+  |> albums.get_albums(
+    Some("did:plc:7vdlgi2bflelz7mmuxoqjfcr_"),
+    pagination.Default,
+  )
   |> should.equal(Ok([]))
 
   albums.new(client)
-  |> albums.get_albums(None)
+  |> albums.get_albums(None, pagination.Default)
   |> should.be_ok
+}
+
+pub fn get_albums_pagination_test() {
+  let client = base.from_url(base_url, None, None)
+
+  albums.new(client)
+  |> albums.get_albums(
+    Some("did:plc:7vdlgi2bflelz7mmuxoqjfcr"),
+    pagination.Pagination(0, 2),
+  )
+  |> result.map(fn(x) { list.length(x) |> should.equal(2) })
 }
 
 pub fn get_artists_test() {
   let client = base.from_url(base_url, None, None)
 
   artists.new(client)
-  |> artists.get_artists(Some("tsiry-sandratraina.com"))
+  |> artists.get_artists(Some("tsiry-sandratraina.com"), pagination.Default)
   |> should.be_ok
 
   artists.new(client)
-  |> artists.get_artists(Some("did:plc:7vdlgi2bflelz7mmuxoqjfcr"))
+  |> artists.get_artists(
+    Some("did:plc:7vdlgi2bflelz7mmuxoqjfcr"),
+    pagination.Default,
+  )
   |> should.be_ok
 
   artists.new(client)
-  |> artists.get_artists(Some("did:plc:7vdlgi2bflelz7mmuxoqjfcr_"))
+  |> artists.get_artists(
+    Some("did:plc:7vdlgi2bflelz7mmuxoqjfcr_"),
+    pagination.Default,
+  )
   |> should.equal(Ok([]))
 
   artists.new(client)
-  |> artists.get_artists(None)
+  |> artists.get_artists(None, pagination.Default)
   |> should.be_ok
+}
+
+pub fn get_artists_pagination_test() {
+  let client = base.from_url(base_url, None, None)
+
+  artists.new(client)
+  |> artists.get_artists(
+    Some("did:plc:7vdlgi2bflelz7mmuxoqjfcr"),
+    pagination.Pagination(0, 2),
+  )
+  |> result.map(fn(x) { list.length(x) |> should.equal(2) })
 }
 
 pub fn get_tracks_test() {
   let client = base.from_url(base_url, None, None)
 
   tracks.new(client)
-  |> tracks.get_tracks(Some("tsiry-sandratraina.com"))
+  |> tracks.get_tracks(Some("tsiry-sandratraina.com"), pagination.Default)
   |> should.be_ok
 
   tracks.new(client)
-  |> tracks.get_tracks(Some("did:plc:7vdlgi2bflelz7mmuxoqjfcr"))
+  |> tracks.get_tracks(
+    Some("did:plc:7vdlgi2bflelz7mmuxoqjfcr"),
+    pagination.Default,
+  )
   |> should.be_ok
 
   tracks.new(client)
-  |> tracks.get_tracks(Some("did:plc:7vdlgi2bflelz7mmuxoqjfcr_"))
+  |> tracks.get_tracks(
+    Some("did:plc:7vdlgi2bflelz7mmuxoqjfcr_"),
+    pagination.Default,
+  )
   |> should.equal(Ok([]))
 
   tracks.new(client)
-  |> tracks.get_tracks(None)
+  |> tracks.get_tracks(None, pagination.Default)
   |> should.be_ok
+}
+
+pub fn get_tracks_pagination_test() {
+  let client = base.from_url(base_url, None, None)
+
+  tracks.new(client)
+  |> tracks.get_tracks(
+    Some("did:plc:7vdlgi2bflelz7mmuxoqjfcr"),
+    pagination.Pagination(0, 2),
+  )
+  |> result.map(fn(x) { list.length(x) |> should.equal(2) })
 }
 
 pub fn get_scrobbles_test() {
   let client = base.from_url(base_url, None, None)
 
   scrobbles.new(client)
-  |> scrobbles.get_scrobbles(Some("tsiry-sandratraina.com"))
+  |> scrobbles.get_scrobbles(Some("tsiry-sandratraina.com"), pagination.Default)
   |> should.be_ok
 
   scrobbles.new(client)
-  |> scrobbles.get_scrobbles(Some("did:plc:7vdlgi2bflelz7mmuxoqjfcr"))
+  |> scrobbles.get_scrobbles(
+    Some("did:plc:7vdlgi2bflelz7mmuxoqjfcr"),
+    pagination.Default,
+  )
   |> should.be_ok
 
   scrobbles.new(client)
-  |> scrobbles.get_scrobbles(Some("did:plc:7vdlgi2bflelz7mmuxoqjfcr_"))
+  |> scrobbles.get_scrobbles(
+    Some("did:plc:7vdlgi2bflelz7mmuxoqjfcr_"),
+    pagination.Default,
+  )
   |> should.equal(Ok([]))
 
   scrobbles.new(client)
-  |> scrobbles.get_scrobbles(None)
+  |> scrobbles.get_scrobbles(None, pagination.Default)
   |> should.be_ok
+}
+
+pub fn get_scrobbles_pagination_test() {
+  let client = base.from_url(base_url, None, None)
+
+  scrobbles.new(client)
+  |> scrobbles.get_scrobbles(
+    Some("did:plc:7vdlgi2bflelz7mmuxoqjfcr"),
+    pagination.Pagination(0, 2),
+  )
+  |> result.map(fn(x) { list.length(x) |> should.equal(2) })
 }
 
 pub fn search_test() {
