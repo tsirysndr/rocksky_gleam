@@ -1,9 +1,8 @@
-import gleam/option.{None}
 import rocksky/client/base
 import rocksky/resources/tracks.{get_track}
 
 pub fn main() {
-  let client = base.new(None, None)
+  let client = base.new()
 
   get_track(
     tracks.new(client),

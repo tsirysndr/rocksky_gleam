@@ -20,7 +20,7 @@ pub fn main() {
 }
 
 pub fn get_user_test() {
-  let client = base.from_url(base_url, None, None)
+  let client = base.from_url(base_url)
 
   users.new(client)
   |> users.get_user("tsiry-sandratraina.comm")
@@ -46,7 +46,7 @@ pub fn get_user_test() {
 }
 
 pub fn get_albums_test() {
-  let client = base.from_url(base_url, None, None)
+  let client = base.from_url(base_url)
 
   albums.new(client)
   |> albums.get_albums(Some("tsiry-sandratraina.com"), pagination.Default)
@@ -72,7 +72,7 @@ pub fn get_albums_test() {
 }
 
 pub fn get_albums_pagination_test() {
-  let client = base.from_url(base_url, None, None)
+  let client = base.from_url(base_url)
 
   albums.new(client)
   |> albums.get_albums(
@@ -83,7 +83,7 @@ pub fn get_albums_pagination_test() {
 }
 
 pub fn get_artists_test() {
-  let client = base.from_url(base_url, None, None)
+  let client = base.from_url(base_url)
 
   artists.new(client)
   |> artists.get_artists(Some("tsiry-sandratraina.com"), pagination.Default)
@@ -109,7 +109,7 @@ pub fn get_artists_test() {
 }
 
 pub fn get_artists_pagination_test() {
-  let client = base.from_url(base_url, None, None)
+  let client = base.from_url(base_url)
 
   artists.new(client)
   |> artists.get_artists(
@@ -120,7 +120,7 @@ pub fn get_artists_pagination_test() {
 }
 
 pub fn get_tracks_test() {
-  let client = base.from_url(base_url, None, None)
+  let client = base.from_url(base_url)
 
   tracks.new(client)
   |> tracks.get_tracks(Some("tsiry-sandratraina.com"), pagination.Default)
@@ -146,7 +146,7 @@ pub fn get_tracks_test() {
 }
 
 pub fn get_tracks_pagination_test() {
-  let client = base.from_url(base_url, None, None)
+  let client = base.from_url(base_url)
 
   tracks.new(client)
   |> tracks.get_tracks(
@@ -157,7 +157,7 @@ pub fn get_tracks_pagination_test() {
 }
 
 pub fn get_scrobbles_test() {
-  let client = base.from_url(base_url, None, None)
+  let client = base.from_url(base_url)
 
   scrobbles.new(client)
   |> scrobbles.get_scrobbles(Some("tsiry-sandratraina.com"), pagination.Default)
@@ -183,7 +183,7 @@ pub fn get_scrobbles_test() {
 }
 
 pub fn get_scrobbles_pagination_test() {
-  let client = base.from_url(base_url, None, None)
+  let client = base.from_url(base_url)
 
   scrobbles.new(client)
   |> scrobbles.get_scrobbles(
@@ -194,7 +194,7 @@ pub fn get_scrobbles_pagination_test() {
 }
 
 pub fn search_test() {
-  let client = base.from_url(base_url, None, None)
+  let client = base.from_url(base_url)
 
   resource.new(client, "/search")
   |> resource.search("daft punk")
@@ -202,7 +202,7 @@ pub fn search_test() {
 }
 
 pub fn get_album_test() {
-  let client = base.from_url(base_url, None, None)
+  let client = base.from_url(base_url)
 
   albums.new(client)
   |> albums.get_album(
@@ -218,7 +218,7 @@ pub fn get_album_test() {
 }
 
 pub fn get_artist_test() {
-  let client = base.from_url(base_url, None, None)
+  let client = base.from_url(base_url)
 
   artists.new(client)
   |> artists.get_artist(
@@ -234,7 +234,7 @@ pub fn get_artist_test() {
 }
 
 pub fn get_track_test() {
-  let client = base.from_url(base_url, None, None)
+  let client = base.from_url(base_url)
 
   tracks.new(client)
   |> tracks.get_track(
